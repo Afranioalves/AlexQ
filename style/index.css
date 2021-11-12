@@ -1,0 +1,122 @@
+html, body{
+
+    height: 100%;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    color:#f1f1f1;
+    font-weight: 300;
+    font-family: Roboto;
+    align-items: center;
+    /*justify-content: center;*/
+    padding-bottom: 88px;
+    
+}
+div.container{
+    width: 400px;
+    background-color: #212121;
+    padding: 20px 20px 42px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 1.2em;
+    box-shadow: 0 0 12px #413e3e inset;
+
+}
+div.container p:nth-child(1){
+    color:rgb(41, 117, 231);
+    font-weight: 600;
+}
+
+
+
+span.question{
+
+    background-color: rgb(167, 39, 77);
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+  
+}
+#question{
+    
+    margin-top: 24px;
+    opacity: 0;
+   
+}
+.anime-question{
+    animation: 1s anime ease-in-out forwards;
+}
+@keyframes anime {
+    from{
+        transform: scale(1.5);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+img.alexq{
+    max-width: 100%;
+    width: 250px;
+    /*position: absolute;
+    top:0;*/
+    margin-top:10vh;
+    z-index: -1;
+}
+input{
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 16px;
+    background-color: #212121;
+    box-shadow: 0 0 6px #494646 inset;
+    text-align: center;
+    outline: none;
+    font-size: 1.2em;
+    color:#b4b4b4;
+    margin-top: 20px;
+}
+
+.input-anime{
+    animation: 2s input-anime infinite ease-in-out forwards;
+}
+
+
+@keyframes input-anime {
+    
+    from{
+
+        transform: scale(1);
+
+    } to{
+
+        transform: scale(1.02);
+        box-shadow: 0 0 6px teal;
+    }
+}
+
+
+
+@keyframes input-show {
+    
+    from{
+
+       opacity: 0;
+
+    } to{
+
+     opacity: 1;
+    }
+}
+.eror{
+    color:rgb(224, 43, 43);
+}
+
